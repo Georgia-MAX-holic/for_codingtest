@@ -1,0 +1,17 @@
+N1 = int(input())
+LIST1 = list(input().split())
+N2 = int(input())
+LIST2 = list(input().split())
+sH =dict()
+
+for x in LIST1 :
+    sH[x]=sH.get(x,0)+1
+    
+for i in LIST2 :
+    
+    try :
+        if sH[i]:
+            print(1)
+        
+    except:
+        print(0)
